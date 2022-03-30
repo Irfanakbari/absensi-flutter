@@ -1,16 +1,36 @@
 # absensiapp
 
-A new Flutter project.
+Sistem Absensi Berbasis Aplikasi Mobile, dibuat dengan Framework Flutter
 
-## Getting Started
+## About
 
-This project is a starting point for a Flutter application.
+Ide Desain: [Dribbble.com](https://dribbble.com/)
 
-A few resources to get you started if this is your first Flutter project:
+Backend:
+- Node.js
+- Laravel (main)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Fitur:
+- Register/Login
+- Anti Fake GPS
+- Anti Root
+- Presensi berdasarkan Radius Lokasi, Face Recognition, Biometric (Fingerprint/Face), IP Address.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Package yang dipakai:
+  - get: ^4.6.1
+  - dio: ^4.0.4
+  - flutter_secure_storage: ^5.0.2
+  - http: ^0.13.4
+  - geolocator: ^8.2.0
+  - loading_animation_widget: ^1.1.0+3
+  - intl: ^0.17.0
+  - image_picker: ^0.8.4+11
+  - safe_device: ^1.1.0
+  - flutter_exif_rotation: ^0.5.0
+  - camera: ^0.9.4+17
+  - path_provider: ^2.0.9
+  - flutter_image_compress: ^1.1.0
+  - local_auth: ^1.1.11
+  - geocoding: ^2.0.4
+  - restart_app: ^1.1.0
+  - permission_handler: ^9.2.0
