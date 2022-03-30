@@ -18,7 +18,6 @@ Fitur:
 
 Package yang dipakai:
   - get: ^4.6.1
-  - dio: ^4.0.4
   - flutter_secure_storage: ^5.0.2
   - http: ^0.13.4
   - geolocator: ^8.2.0
