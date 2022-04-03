@@ -1,1 +1,30 @@
+workflows:
+  android:
+    environment:
+      flutter: beta
+    scripts:
+      - name: say hello
+        script: echo "Hello Codemagician!"
+      - name: Run unit tests
+        script: ./gradlew test
+        test_report: app/build/**/*.xml
+      - name: Build Android APK
+        working_directory: android
+        script: ./gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/**/**/*.apk
+      - name: Build Android App Bundle
+        working_directory: android
+        script: ./gradlew bundleRelease
+    artifacts:
+      - build/**/outputs/bundle/**/*.aab
+    triggering:
+      events:
+        - pull_request
+      branch_patterns: 
+        - pattern: main
+      cancel_previous_builds: true
+
+
+
 
