@@ -76,7 +76,7 @@ class AbsenController extends GetxController {
         await testCompressAndGetFile(pathh, '${tempDir.path}/imageC.jpeg');
     currentStat.value = 'Memverifikasi Wajah...';
     var ress = http.MultipartRequest(
-        'POST', Uri.parse('https://restapi-face.herokuapp.com/verifikasi2'));
+        'POST', Uri.parse('https://face.kanadee.xyz/similarity'));
     ress.files.add(await http.MultipartFile.fromPath('file', compress!.path,
         filename: 'imageC.jpeg'));
     ress.fields['source'] = biodata.wajah.value;

@@ -24,7 +24,7 @@ class BioController {
         await testCompressAndGetFile(pathh, '${tempDir.path}/imageC.jpeg');
     currentStat.value = 'Memeriksa Wajah...';
     var wajahres = http.MultipartRequest(
-        'POST', Uri.parse('https://restapi-face.herokuapp.com/uid'));
+        'POST', Uri.parse('https://face.kanadee.xyz/faceid'));
     wajahres.files
         .add(await http.MultipartFile.fromPath('file', compress!.path));
     var responAPI = await wajahres.send();
